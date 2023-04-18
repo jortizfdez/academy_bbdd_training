@@ -1,0 +1,23 @@
+-- Ejercicio 2:  Select only the Names of all the Bands. Change the name of the column the data returns to Band Name.
+
+-- Ejercicio 3: Select the Oldest Album. Make sure to only return one result from this query, and that you are not returning any albums that do not have a release year.
+
+-- Ejercicio 4: Get all Bands that have Albums. There are multiple different ways to solve this problem, but they will all involve a join.
+
+-- Ejercicio 5: Get all Bands that have No Albums. This is very similar to #4 but will require more than just a join.
+
+-- Ejercicio 6: Get the Longest Album. This problem sounds a lot like #3 but the solution is quite a bit different. I would recommend looking up the SUM aggregate function.
+-- Return the album name as Name, the album release year as Release Year, and the album length as Duration.
+
+-- Ejercicio 7:  Update the Release Year of the Album with no Release Year. Set the release year to 1986.
+-- You may run into an error if you try to update the release year by using release_year IS NULL in the WHERE statement of your UPDATE. This is because MySQL Workbench by default will not let you update a table that has a primary key without using the primary key in the UPDATE statement. This is a good thing since you almost never want to update rows without using the primary key, so to get around this error make sure to use the primary key of the row you want to update in the WHERE of the UPDATE statement.
+
+-- Ejercicio 8: Insert a record for your favorite Band and one of their Albums
+
+-- Ejercicio 9: Delete the Band and Album you added in #8. The order of how you delete the records is important since album has a foreign key to band.
+
+-- Ejercicio 10: Get the Average Length of all Songs. Return the average length as Average Song Duration.
+
+-- Ejercicio 11: Select the longest Song off each Album. Return the album name as Album, the album release year as Release Year, and the longest song length as Duration
+
+-- Ejercicio 12: Get the number of Songs for each Band. This is one of the toughest question on the list. It will require you to chain together two joins instead of just one.
